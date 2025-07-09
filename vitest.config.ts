@@ -4,5 +4,9 @@ export default defineConfig({
   test: {
     globals: true,
     silent: false,
+    coverage: {
+      reporter: ['text', 'lcov', 'html'],
+      reportsDirectory: './coverage',
+    },
   },
 });
