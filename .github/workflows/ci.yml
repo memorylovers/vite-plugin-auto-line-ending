@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write
 
 jobs:
   test:
@@ -50,6 +51,14 @@ jobs:
 
       - name: Run test coverage
         run: pnpm test:coverage
+
+      - name: Setup LCOV
+        if: matrix.os == 'ubuntu-latest'
+        uses: hrishikesh-kadam/setup-lcov@v1
+
+      - name: Coverage Report
+        if: matrix.os == 'ubuntu-latest'
+        uses: k1LoW/octocov-action@v1
 
   lint:
     runs-on: ubuntu-latest
