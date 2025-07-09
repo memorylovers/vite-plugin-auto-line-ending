@@ -1,0 +1,21 @@
+{
+  // Default glob patterns for markdown files
+  "globs": [
+    "**/*.md"
+  ],
+  // Markdownlint rules configuration
+  "config": {
+    "MD013": false, // line-length
+    "MD029": false, // ol-prefix (ordered list item prefix)
+    "MD036": false, // no-emphasis-as-heading
+    "MD040": false, // fenced-code-language
+    "MD041": false // first-line-heading
+  },
+  // Ignore patterns
+  "ignores": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    "coverage/**"
+  ]
+}

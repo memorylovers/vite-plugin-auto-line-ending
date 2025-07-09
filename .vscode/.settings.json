@@ -1,0 +1,26 @@
+{
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "以下のルールに従って日本語でコミットメッセージを生成してください：\n\n1. **必須フォーマット**: Conventional Commits形式を厳守\n   - 使用可能なプレフィックス: feat, fix, test, refactor, docs, chore\n   - 形式: `<type>: <description>`\n\n2. **記述ルール**:\n   - 1行72文字以内で簡潔に記述\n   - 「なぜ」の観点で変更の目的を説明（「何を」の詳細は不要）\n   - 日本語で記述\n\n3. **例**:\n   - ✅ feat: ユーザー認証機能を追加\n   - ✅ fix: ログイン時のnullエラーを修正\n   - ✅ refactor: Firestore処理を共通化して保守性を向上\n   - ❌ fix: バグ修正\n   - ❌ feat: app/lib/features/auth/login.dartとsignup.dartを追加\n\n4. **プロジェクト固有**:\n   - Flutter/Dartプロジェクトであることを考慮\n   - 軽量化TDDアプローチを意識した記述"
+    }
+  ],
+  "github.copilot.enable": {
+    "scminput": true,
+    "*": false
+  },
+  "prettier.configPath": ".prettierrc.json",
+  "prettier.requireConfig": true
+}
