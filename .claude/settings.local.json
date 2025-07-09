@@ -48,7 +48,10 @@
       "mcp__ide__executeCode",
       "WebFetch(domain:github.com)",
       "Bash(actionlint:*)",
-      "Bash(act:*)"
+      "Bash(act:*)",
+      "Bash(gh run list:*)",
+      "Bash(gh run view:*)",
+      "Bash(git ls-tree:*)"
     ],
     "deny": [
       "Read(../**)",
